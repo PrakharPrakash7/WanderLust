@@ -1,0 +1,70 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<body>
+
+     <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" enctype="multipart/form-data">
+     
+     
+       
+       
+        <div class="row mt-3">
+            <div class="col-8 offset-2">
+                   <h3 >Edit your Listing Listing</h3>
+                  <div class="mb-3">
+             <label for="title" class="form-label">Title:</label>
+        <input type="text" class="form-control"  value="<%=listing.title %>" name="title" id="title" required>
+        </div>
+       
+        <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+        <textarea name="description"  class="form-control" id="description" ><%=listing.description %></textarea>
+        
+        </div>
+        
+         <div class="mb-3">
+             <label for="title" class="form-label">Image Link:</label>
+        <input type="file" class="form-control" name="image" id="title" >
+        </div>
+        <div class="row">
+         <div class="mb-3 col-md-4">
+             <label for="title" class="form-label">Price:</label>
+        <input type="text" class="form-control" value="<%=listing.price %>" name="price" id="title" >
+        </div>
+      
+        <div class="mb-3 col-md-8">
+             <label for="title" class="form-label">Country Name:</label>
+        <input type="text" class="form-control"value="<%=listing.country %>" name="country" id="title" >
+        </div>
+        </div>
+          <div class="mb-3">
+             <label for="title" class="form-label">Location:</label>
+        <input type="text" class="form-control"  value="<%=listing.location %>" name="location" id="title" >
+        </div>
+        
+        <button class="btn btn-dark edit-btn" type="submit">Edit</button>
+            </div>
+        </div>
+        
+        <!-- <label for="title">Title:</label>
+        <input type="text" value="<%=listing.title %>" name="title" id="title" >
+        <br>
+        <label for="description">Description:</label>
+        <textarea name="description"    id="description" ><%=listing.description %></textarea>
+        <br>
+        <label for="image">Image URL:</label>
+        <input  name="image" value="<%=listing.image %>"  type="image">
+        <br>
+        <label for="price">Price:</label>
+        <input type="number" value="<%=listing.price %>"  name="price" id="price" required>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" value="<%=listing.location %>"  name="location" id="location" required>
+        <br>
+        <label for="country">Country:</label>
+        <input type="text" name="country"value="<%=listing.country %>"  id="country" required>
+        <br>
+        <button >Edit</button> -->
+
+    </form>
+    
+</body>

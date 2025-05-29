@@ -1,0 +1,131 @@
+
+body{
+  
+   font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+    
+.container{
+    flex: 1;
+   
+}
+footer{
+    position: relative !important;
+    bottom: 0 !important;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-html5{
+    color: red;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: black !important ;
+    font-size: 1.5rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: black;
+    
+}
+.f-info-links ,.f-info-socials,.f-info-brand{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 2rem  !important;
+    font-weight: 600;
+    padding-left: 1rem;
+    
+}
+.search-input{
+    border-radius: 25px !important;
+    border: .5px solid black !important;
+}
+.search-btn{
+    border-radius: 25px !important;
+}
+.search-bar{
+   margin-right: 1rem !important;
+   
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: red !important; /* Bootstrap primary color */
+}
+
+.f-info-socials i{
+     font-size: 1.2rem;
+   margin-right: 1.2rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    background-color: gray;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+    
+}
+
+/* Card Effects */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+    
+}
+
+

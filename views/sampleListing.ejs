@@ -1,0 +1,15 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<body>
+    <div>
+        <h1>Sample Listing</h1>
+        <h2>Title : <%= sampleListing.title %></h2>
+          <h2>Descpription : <%= sampleListing.description %></h2>
+            <div>Image:
+                <img src="<%= sampleListing.image %>" alt="">
+            </div>
+              <h2>PRICE : <%= sampleListing.price %></h2>
+                <h2>location : <%= sampleListing.location %></h2>
+                  <h2>country : <%= sampleListing.country %></h2>
+    </div>
+</body>
